@@ -43,7 +43,6 @@ tasks.forEach(task => {
 
     checkboxForm.appendChild(checkbox)
     checkboxForm.appendChild(label)
-
    
     const taskText = document.createElement('span')
     taskText.className = 'task-item__text'
