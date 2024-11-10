@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание формы</title>
+</head>
+<body>
+    <script>
+
+        const form = document.createElement('form')
+        form.className = 'create-user-form'
+
+        const nameLabel = document.createElement('label')
+        nameLabel.textContent = 'Имя'
+        const nameInput = document.createElement('input')
+        nameInput.type = 'text'
+        nameInput.name = 'userName'
+        nameInput.placeholder = 'Введите ваше имя'
+        nameLabel.appendChild(nameInput)
+
+        const passwordLabel = document.createElement('label')
+        passwordLabel.textContent = 'Пароль'
+        const passwordInput = document.createElement('input')
+        passwordInput.type = 'password'
+        passwordInput.name = 'password'
+        passwordInput.placeholder = 'Придумайте Пароль'
+        passwordLabel.appendChild(passwordInput)
+
+        const submitButton = document.createElement('button')
+        submitButton.type = 'submit'
+        submitButton.textContent = 'Подтвердить'
+
+        form.appendChild(nameLabel)
+        form.appendChild(passwordLabel)
+        form.appendChild(submitButton)
+
+        document.body.appendChild(form)
+    </script>
+</body>
+</html>
